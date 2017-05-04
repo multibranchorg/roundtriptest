@@ -5,7 +5,8 @@ pipeline {
       steps {
         sh 'echo 42'
         script {
-          this is a thing
+          def initialize = load('jenkins/pipeline/initialize.groovy')
+          initialize()
         }
         
       }
